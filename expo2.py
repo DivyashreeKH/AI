@@ -14,8 +14,10 @@ def impute_b(cols):
            return 2
        elif b=="what":
             return 3
+       elif b=="is":
+              return 4
         else:
-            return 4
+            return 5
 data['b']=data['b'].apply(str)
 data['second_column'] = data['second_column']
 data['second_column'] = data.second_column.str.split().str.get(0)
